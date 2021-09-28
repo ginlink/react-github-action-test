@@ -1,7 +1,7 @@
 /*
  * @Author: jiangjin
  * @Date: 2021-09-25 17:21:15
- * @LastEditTime: 2021-09-28 17:36:53
+ * @LastEditTime: 2021-09-28 18:31:23
  * @LastEditors: jiangjin
  * @Description: 
  * 
@@ -11,6 +11,7 @@ import './App.css';
 import { animated, config, useSpring } from "react-spring";
 
 function App() {
+  const a = 1
   const [flip, set] = useState(false)
   const { number } = useSpring({
     reset: true,

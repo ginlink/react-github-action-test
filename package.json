@@ -46,6 +46,13 @@
     "cross-env": "^5",
     "customize-cra": "^1.0",
     "react-app-rewired": "^2.1",
-    "uglifyjs-webpack-plugin": "^2"
+    "uglifyjs-webpack-plugin": "^2",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-react": "^7.25.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.3.2",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0"
   }
 }

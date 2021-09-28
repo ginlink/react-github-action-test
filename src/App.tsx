@@ -1,14 +1,14 @@
 /*
  * @Author: jiangjin
  * @Date: 2021-09-25 17:21:15
- * @LastEditTime: 2021-09-28 18:31:23
+ * @LastEditTime: 2021-09-28 19:04:36
  * @LastEditors: jiangjin
- * @Description: 
- * 
+ * @Description:
+ *
  */
-import React, { useState } from 'react';
-import './App.css';
-import { animated, config, useSpring } from "react-spring";
+import React, { useState } from 'react'
+import './App.css'
+import { animated, config, useSpring } from 'react-spring'
 
 function App() {
   const a = 1
@@ -23,8 +23,8 @@ function App() {
     onRest: () => set(!flip),
   })
 
-  return <animated.div>{number.to(n => n.toFixed(2))}</animated.div>
+  return <animated.div>{number.to((n) => n.toFixed(2))}</animated.div>
   // return null
 }
 
-export default App;
+export default App

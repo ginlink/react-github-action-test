@@ -1,13 +1,12 @@
 /*
  * @Author: jiangjin
  * @Date: 2021-09-25 17:21:15
- * @LastEditTime: 2021-09-25 17:31:09
+ * @LastEditTime: 2021-09-28 17:36:53
  * @LastEditors: jiangjin
  * @Description: 
  * 
  */
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { animated, config, useSpring } from "react-spring";
 

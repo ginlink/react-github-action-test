@@ -19,7 +19,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run build:prod",
+    "build:prod": "cross-env NODE_ENV_CUSTOM=production react-app-rewired  build --mode production",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -27,10 +28,7 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ],
-    "rules": {
-      "@typescript-eslint/no-unused-vars":"off"
-    }
+    ]
   },
   "browserslist": {
     "production": [
@@ -43,5 +41,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cross-env": "^5",
+    "customize-cra": "^1.0",
+    "react-app-rewired": "^2.1",
+    "uglifyjs-webpack-plugin": "^2"
   }
 }

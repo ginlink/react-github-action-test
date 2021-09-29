@@ -2,7 +2,7 @@
 ###
  # @Author: jiangjin
  # @Date: 2021-09-29 14:34:03
- # @LastEditTime: 2021-09-29 15:27:04
+ # @LastEditTime: 2021-09-29 15:33:11
  # @LastEditors: jiangjin
  # @Description: 
  # 
@@ -15,5 +15,5 @@
 # docker build -t ginlink/sheep-web:dev .
 
 # 3.推送到dockerhub
-docker login -u $DOCKER_ACCESS_KEY -p $DOCKER_ACCESS_TOKEN
+docker login -u "$DOCKER_ACCESS_KEY" -p "$DOCKER_ACCESS_TOKEN"
 # docker push ginlink/sheep-web:dev

@@ -5,8 +5,8 @@ on:
     branches:
       - main
 env:
-  DOCKER_ACCESS_KEY: ${{secrets.DOCKER_ACCESS_KEY}}
-  DOCKER_ACCESS_TOKEN: ${{secrets.DOCKER_ACCESS_TOKEN}}
+  # DOCKER_ACCESS_KEY: ${{secrets.DOCKER_ACCESS_KEY}}
+  # DOCKER_ACCESS_TOKEN: ${{secrets.DOCKER_ACCESS_TOKEN}}
 
 jobs:
   build-and-deploy:

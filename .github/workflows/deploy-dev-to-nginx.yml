@@ -23,13 +23,13 @@ jobs:
           persist-credentials: false
       # - name: docker login
       #   run: ./sh/build-dev.sh
-      # - name: restore yarn
-      #   uses: actions/cache@v2
-      #   with:
-      #     path: |
-      #       node_modules
-      #       */*/node_modules
-      #     key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
+      - name: restore yarn
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
       - name: Install and Build
         run: ./sh/build-dev.sh
       # - name: Login to DockerHub

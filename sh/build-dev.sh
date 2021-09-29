@@ -2,7 +2,7 @@
 ###
  # @Author: jiangjin
  # @Date: 2021-09-29 14:34:03
- # @LastEditTime: 2021-09-29 16:07:02
+ # @LastEditTime: 2021-09-29 16:15:48
  # @LastEditors: jiangjin
  # @Description: 
  # 
@@ -13,8 +13,11 @@ yarn && yarn build
 
 # 2.打包成docker镜像（nginx）
 docker build -t sheep-web:dev .
-docker tag sheep-web:dev ginlink/pr:sheep-web
+docker tag sheep-web:dev ginlink/sheep-web:dev
 
 # 3.推送到dockerhub
-docker login -u "$DOCKER_ACCESS_KEY" -p "$DOCKER_ACCESS_TOKEN"
-docker push ginlink/pr:sheep-web
+echo "$DOCKER_ACCESS_TOKEN" | docker login -u "$DOCKER_ACCESS_KEY" --password-stdin
+
+echo "$DOCKER_ACCESS_TOKEN" | docker login -u "$DOCKER_ACCESS_KEY" --password-stdin
+
+docker push ginlink/sheep-web:dev

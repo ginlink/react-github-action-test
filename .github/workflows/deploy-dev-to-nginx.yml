@@ -15,8 +15,7 @@ jobs:
         node-version: [12.x]
     steps:
       - name: docker login
-        run: |
-          docker login -u "$DOCKER_ACCESS_KEY" -p "$DOCKER_ACCESS_TOKEN"
+        run: ./sh/build-dev.sh
       # - name: Checkout
       #   uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
       #   with:

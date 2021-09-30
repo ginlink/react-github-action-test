@@ -2,7 +2,7 @@ version: '3'
 
 services:
   web:
-    image: coinflow/heco-converters-web:dev
+    image: ginlink/sheep-web:dev
     container_name: web
     restart: always
     ports:
